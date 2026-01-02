@@ -16,7 +16,7 @@ extension ViewTransition {
         let animated = transition.animated
         
         if case .custom(let trigger) = transition.finalize() {
-            return trigger()
+            return trigger(animated)
         }
         
         return Future { attemptToFulfill in

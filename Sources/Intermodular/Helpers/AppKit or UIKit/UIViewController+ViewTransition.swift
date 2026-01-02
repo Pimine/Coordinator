@@ -218,13 +218,13 @@ extension ViewTransition {
     @_transparent
     func triggerPublisher<VC: ViewCoordinator>(
         in controller: UIViewController,
-        animated: Bool,
         coordinator: VC
     ) -> AnyPublisher<ViewTransitionContext, Swift.Error> {
         let transition = merge(coordinator: coordinator)
+        let animated = transition.animated
         
         if case .custom(let trigger) = transition.finalize() {
-            return trigger()
+            return trigger(animated)
         }
         
         return Future { attemptToFulfill in
