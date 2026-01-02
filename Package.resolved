@@ -1,5 +1,5 @@
 {
-  "originHash" : "a65fcc9121c66ba7b9379464a0845e4170090f8c1f461b9f592afc7d1f6b697e",
+  "originHash" : "5866ac0ae5257f65e34dc5ab6d39e001452bf6790b271cc97437b36b91c72f8c",
   "pins" : [
     {
       "identity" : "merge",
@@ -67,7 +67,7 @@
     {
       "identity" : "swiftuix",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftUIX/SwiftUIX.git",
+      "location" : "https://github.com/Pimine/SwiftUIX.git",
       "state" : {
         "branch" : "master",
         "revision" : "56175334751a03f80d3a650c497b8525237d4e43"
