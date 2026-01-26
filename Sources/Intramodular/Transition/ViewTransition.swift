@@ -18,7 +18,7 @@ public struct ViewTransition: ViewTransitionContext {
     
     private var payload: Payload
     
-    var animated: Bool = true
+    public var animated: Bool = true
     var payloadViewName: AnyHashable?
     var payloadViewType: Any.Type?
     var environmentInsertions: EnvironmentInsertions
