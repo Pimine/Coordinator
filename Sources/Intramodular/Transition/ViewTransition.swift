@@ -252,6 +252,10 @@ extension ViewTransition {
         .init(payload: ViewTransition.Payload.setRoot, view: view)
     }
     
+    public static func setMany(_ views: [AnyPresentationView]) -> Self {
+        .init(payload: ViewTransition.Payload.setMany(views))
+    }
+    
     public static func linear(_ transitions: [ViewTransition]) -> Self {
         .init(payload: .linear(transitions))
     }
