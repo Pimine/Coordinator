@@ -18,7 +18,7 @@ public struct ViewTransition: ViewTransitionContext {
     
     private var payload: Payload
     
-    var animated: Bool = true
+    public var animated: Bool = true
     var payloadViewName: AnyHashable?
     var payloadViewType: Any.Type?
     var environmentInsertions: EnvironmentInsertions
@@ -82,6 +82,8 @@ extension ViewTransition {
                 return nil
             case .set:
                 return nil
+            case .setMany:
+                return nil
             case .setRoot:
                 return nil
             case .linear:
@@ -121,6 +123,8 @@ extension ViewTransition: CustomStringConvertible {
                 return "Pop to root or dismiss"
             case .set:
                 return "Set"
+            case .setMany:
+                return "Set Many"
             case .setRoot:
                 return "Set root"
             case .linear:

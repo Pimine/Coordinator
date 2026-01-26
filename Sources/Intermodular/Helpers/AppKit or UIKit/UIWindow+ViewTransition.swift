@@ -13,7 +13,6 @@ extension ViewTransition {
         coordinator: Coordinator
     ) -> AnyPublisher<ViewTransitionContext, Swift.Error> {
         let transition = merge(coordinator: coordinator)
-        let animated = transition.animated
         
         if case .custom(let trigger) = transition.finalize() {
             return trigger(animated)
@@ -54,7 +53,7 @@ extension ViewTransition {
                 }
                 default: do {
                     do {
-                        try window.rootViewController.unwrap().trigger(transition, animated: animated) {
+                        try window.rootViewController.unwrap().trigger(transition) {
                             attemptToFulfill(.success(self))
                         }
                     } catch {
