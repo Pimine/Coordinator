@@ -169,6 +169,19 @@ extension UIViewController {
                     }
                 }
             }
+            
+            case .setMany(let views): do {
+                guard let navigationController = nearestNavigationController else {
+                    throw ViewTransition.Error.navigationControllerMissing
+                }
+                
+                navigationController.setViewControllers(
+                    views.map { $0._toAppKitOrUIKitViewController() },
+                    animated: transition.animated
+                ) {
+                    completion()
+                }
+            }
                 
             case .linear(var transitions): do {
                 guard !transitions.isEmpty else {
