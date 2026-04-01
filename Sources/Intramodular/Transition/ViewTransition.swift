@@ -82,6 +82,8 @@ extension ViewTransition {
                 return nil
             case .set:
                 return nil
+            case .setMany:
+                return nil
             case .setRoot:
                 return nil
             case .linear:
@@ -121,6 +123,8 @@ extension ViewTransition: CustomStringConvertible {
                 return "Pop to root or dismiss"
             case .set:
                 return "Set"
+            case .setMany:
+                return "Set Many"
             case .setRoot:
                 return "Set root"
             case .linear:
@@ -246,6 +250,10 @@ extension ViewTransition {
     
     public static func setRoot(_ view: AnyPresentationView) -> Self {
         .init(payload: ViewTransition.Payload.setRoot, view: view)
+    }
+    
+    public static func setMany(_ views: [AnyPresentationView]) -> Self {
+        .init(payload: ViewTransition.Payload.setMany(views))
     }
     
     public static func linear(_ transitions: [ViewTransition]) -> Self {
