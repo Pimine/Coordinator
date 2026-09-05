@@ -2,9 +2,8 @@
 // Copyright (c) Vatsal Manot
 //
 
-import Merge
+import Combine
 import Foundation
-import Swallow
 import SwiftUIX
 
 public struct ViewTransition: ViewTransitionContext {

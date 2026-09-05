@@ -1,76 +1,13 @@
 {
-  "originHash" : "5866ac0ae5257f65e34dc5ab6d39e001452bf6790b271cc97437b36b91c72f8c",
+  "originHash" : "d5b89bda24f71ab4da43f65d21b86de970887365ea68ff521f0c2a36897b9601",
   "pins" : [
-    {
-      "identity" : "merge",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Pimine/Merge.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "8b74235979c819f79d185f016e18779341c39617"
-      }
-    },
-    {
-      "identity" : "swallow",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/vmanot/Swallow.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "330ff6c297bc1c5e319dfd51f4bee15fe8b248f5"
-      }
-    },
-    {
-      "identity" : "swift-atomics",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-atomics.git",
-      "state" : {
-        "revision" : "b601256eab081c0f92f059e12818ac1d4f178ff7",
-        "version" : "1.3.0"
-      }
-    },
-    {
-      "identity" : "swift-collections",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-collections",
-      "state" : {
-        "revision" : "fea17c02d767f46b23070fdfdacc28a03a39232a",
-        "version" : "1.5.1"
-      }
-    },
-    {
-      "identity" : "swift-subprocess",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/preternatural-fork/swift-subprocess.git",
-      "state" : {
-        "revision" : "45581612c9a4e2a982065d1e1ee11f1d2399aa4c",
-        "version" : "0.4.1"
-      }
-    },
-    {
-      "identity" : "swift-syntax",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/swift-precompiled/swift-syntax",
-      "state" : {
-        "branch" : "release/6.1",
-        "revision" : "fc197a24fb2e77609fbe3d94624e36f84d758099"
-      }
-    },
-    {
-      "identity" : "swift-system",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-system",
-      "state" : {
-        "revision" : "7c6ad0fc39d0763e0b699210e4124afd5041c5df",
-        "version" : "1.6.4"
-      }
-    },
     {
       "identity" : "swiftuix",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Pimine/SwiftUIX.git",
       "state" : {
         "branch" : "master",
-        "revision" : "9e6dc79e584dd36624254eea4c624bfce98bad4b"
+        "revision" : "07bdc1cc7aff28799a0488a7b820ee7ce17f693c"
       }
     }
   ],

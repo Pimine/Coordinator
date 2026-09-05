@@ -2,10 +2,8 @@
 // Copyright (c) Vatsal Manot
 //
 
-import Diagnostics
-import Merge
+import Combine
 import Foundation
-import Swallow
 import SwiftUIX
 
 #if os(iOS) || os(tvOS) || os(visionOS) || targetEnvironment(macCatalyst)

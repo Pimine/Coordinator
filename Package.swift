@@ -14,14 +14,12 @@ let package = Package(
         .library(name: "Coordinator", targets: ["Coordinator"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Pimine/Merge.git", branch: "master"),
         .package(url: "https://github.com/Pimine/SwiftUIX.git", branch: "master"),
     ],
     targets: [
         .target(
             name: "Coordinator",
             dependencies: [
-                "Merge",
                 "SwiftUIX"
             ],
             path: "Sources"

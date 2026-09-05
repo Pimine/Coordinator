@@ -2,7 +2,7 @@
 // Copyright (c) Vatsal Manot
 //
 
-import Swallow
+import Combine
 import SwiftUIX
 
 /// A property wrapper that provides access to a view coordinator.

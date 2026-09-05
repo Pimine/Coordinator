@@ -3,7 +3,6 @@
 //
 
 import Combine
-import Swallow
 import SwiftUIX
 
 #if os(iOS) || os(tvOS) || os(visionOS) || targetEnvironment(macCatalyst)
