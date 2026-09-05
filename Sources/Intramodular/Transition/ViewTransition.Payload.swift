@@ -51,6 +51,7 @@ extension ViewTransition {
         case popToRootOrDismiss
         
         case set(AnyPresentationView, transition: _WindowSetTransition?)
+        case setMany([AnyPresentationView])
         case setRoot(AnyPresentationView)
         
         case linear([ViewTransition])
@@ -88,6 +89,8 @@ extension ViewTransition.Payload {
                     return nil
                 case .set(let view, _):
                     return view
+                case .setMany:
+                    return nil
                 case .setRoot(let view):
                     return view
                 case .linear:
@@ -125,6 +128,8 @@ extension ViewTransition.Payload {
                     break
                 case .set(_, let transition):
                     self = .set(newValue, transition: transition)
+                case .setMany:
+                    break
                 case .setRoot:
                     self = .setRoot(newValue)
                 case .linear:
