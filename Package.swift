@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/vmanot/Merge.git", branch: "master"),
-        .package(url: "https://github.com/SwiftUIX/SwiftUIX.git", branch: "master"),
+        .package(url: "https://github.com/Pimine/SwiftUIX.git", branch: "master"),
     ],
     targets: [
         .target(
