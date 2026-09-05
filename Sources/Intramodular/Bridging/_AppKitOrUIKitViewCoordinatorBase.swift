@@ -2,7 +2,7 @@
 // Copyright (c) Vatsal Manot
 //
 
-import Merge
+import Combine
 import SwiftUIX
 
 var _coordinatorRuntimeLookup: [ObjectIdentifier: Unmanaged<_opaque_AppKitOrUIKitViewCoordinatorBase>] = [:]

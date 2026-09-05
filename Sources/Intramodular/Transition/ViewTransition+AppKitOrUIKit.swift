@@ -4,8 +4,8 @@
 
 #if os(iOS) || os(macOS) || os(tvOS)
 
+import Combine
 import Foundation
-import Merge
 import SwiftUIX
 
 extension ViewTransition {

@@ -2,7 +2,7 @@
 // Copyright (c) Vatsal Manot
 //
 
-import Swallow
+import Combine
 import SwiftUIX
 
 #if os(iOS) || os(tvOS) || os(visionOS) || targetEnvironment(macCatalyst)
